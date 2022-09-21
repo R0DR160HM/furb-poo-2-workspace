@@ -34,14 +34,17 @@ public class Camara {
 	}
 	
 	public Vereador getVereadorMaisProjAprovados() {
-		Vereador vereador = null;
+		Vereador vereador = new Vereador();
 		for (Partido p : this.partidos) {
 			Vereador v = p.getVereadorMaisProjAprovados();
 			if (v != null) {
-				if (vereador == null || v.getQtdProjAprovados() > vereador.getQtdProjAprovados()) {
+				if (v.getQtdProjAprovados() > vereador.getQtdProjAprovados()) {
 					vereador = v;
 				}
 			}
+		}
+		if (vereador.getNome().equals("")) {
+			return null;
 		}
 		return vereador;
 	}

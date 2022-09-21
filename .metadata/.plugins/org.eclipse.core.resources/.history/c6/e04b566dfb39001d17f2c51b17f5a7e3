@@ -108,7 +108,7 @@ public class Partido {
 		if (this.vereadores.isEmpty()) {
 			return null;
 		}
-		Vereador vereador = this.vereadores.get(0);
+		Vereador vereador = this.vereadores.get(0)
 		for (Vereador v : this.vereadores) {
 			if (v.getDesempenho() < vereador.getDesempenho()) {
 				vereador = v;
