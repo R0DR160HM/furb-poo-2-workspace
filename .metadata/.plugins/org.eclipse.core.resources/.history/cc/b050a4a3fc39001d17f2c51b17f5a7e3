@@ -73,11 +73,14 @@ public class Camara {
 	}
 	
 	public Vereador getVereadorMenorDesempenho() {
-		Vereador vereador = null;
+		Vereador vereador = this.getVereadorMaiorDesempenho();
+		if (vereador == null) {
+			return null;
+		}
 		for (Partido p : this.partidos) {
 			Vereador v = p.getVereadorMenorDesempenho();
 			if (v != null) {
-				if (vereador == null || v.getDesempenho() < vereador.getDesempenho()) {
+				if (v.getDesempenho() < vereador.getDesempenho()) {
 					vereador = v;
 				}				
 			}
