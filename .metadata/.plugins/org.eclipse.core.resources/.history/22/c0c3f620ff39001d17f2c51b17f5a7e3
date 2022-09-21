@@ -86,28 +86,8 @@ public class Camara {
 	}
 	
 	public ArrayList<Vereador> getVereadoresAcimaDaMedia() {
-		double media = this.getMedia();
 		ArrayList<Vereador> vereadores = new ArrayList<>();
-		for (Partido p : this.partidos) {
-			for (Vereador v : p.getVereadores()) {
-				if (v.getDesempenho() > media) {
-					vereadores.add(v);
-				}
-			}
-		}
 		return vereadores;
-	}
-	
-	public double getMedia() {
-		double media = 0;
-		int quantidade = 0;
-		for (Partido p : this.partidos) {
-			for (Vereador v : p.getVereadores()) {
-				media += v.getDesempenho();
-				quantidade++;
-			}
-		}
-		return media / quantidade;
 	}
 
 }

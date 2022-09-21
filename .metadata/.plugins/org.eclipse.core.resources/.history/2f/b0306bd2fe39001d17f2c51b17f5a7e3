@@ -117,13 +117,5 @@ public class Partido {
 		return vereador;
 	}
 	
-	public Vereador[] getVereadores() {
-		Vereador[] vereadores = new Vereador[this.vereadores.size()];
-		for (int i = 0; i < this.vereadores.size(); i++) {
-			vereadores[i] = this.vereadores.get(i);
-		}
-		return vereadores;
-	}
-	
 
 }
