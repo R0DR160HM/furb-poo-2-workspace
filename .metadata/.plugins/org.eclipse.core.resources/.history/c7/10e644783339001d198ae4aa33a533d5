@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Partido {
+	
+	private List<Vereador> vereadores = new ArrayList<Vereador>();
+	
+	public void addVereador(Vereador vereador) {
+		vereador.setPartido(this);
+		this.vereadores.add(vereador);
+	}
+
+}

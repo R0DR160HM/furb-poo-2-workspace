@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Camara {
+	
+	private List<Partido> partidos = new ArrayList<Partido>();
+	
+	public double getMediaDesempenho() {
+		double total = 0;
+		for (Partido p : this.partidos) {
+			total += p.getMediaDesempenho();
+		}
+		return total / this.partidos.size();
+	}
+
+}

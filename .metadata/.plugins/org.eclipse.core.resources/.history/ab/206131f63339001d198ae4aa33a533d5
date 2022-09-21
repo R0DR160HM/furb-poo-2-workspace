@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Camara {
+	
+	private List<Partido> partidos = new ArrayList<Partido>();
+
+}

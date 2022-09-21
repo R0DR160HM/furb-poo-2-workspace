@@ -1,0 +1,50 @@
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		Camara camara = new Camara();
+		
+		Partido independentes = new Partido("Sem Partido", 0);
+		Partido republicanos = new Partido("Republicanos", 10);
+		Partido psd = new Partido("Partido Social Democrático", 55);
+		Partido pl = new Partido("Partido Liberal", 22);
+		Partido cidadania = new Partido("Cidadania", 23);
+		Partido uniao = new Partido("União Brasil", 44);
+		Partido podemos = new Partido("Podemos", 19);
+		Partido novo = new Partido("Partido NOVO", 30);
+		Partido patriota = new Partido("Patriotas", 51);
+		Partido solidariedade = new Partido("Solidariedade", 77);
+		Partido psdb = new Partido("Partido da Social Democracia Brasileira", 45);
+		
+		Vereador egidio = new Vereador("Egídio da Rosa Beckhauser", 10, 3, republicanos);
+		Vereador silmara = new Vereador("Silmara Miguel", 2, 1, psd);
+		Vereador almir = new Vereador("Almir Vieira", 7, 4, independentes);
+		Vereador jaisom = new Vereador("Jaisom Maurildo da Silva", 12321, 2, pl);
+		Vereador adriano = new Vereador("Adriano Pereira", 10, 9, independentes);
+		Vereador bruno = new Vereador("Bruno Cunha", 0, 0, cidadania);
+		Vereador carlos = new Vereador("Carlos Wagner", 2, 1, uniao);
+		Vereador cristiane = new Vereador("Cristiane Loureiro", 2, 0, podemos);
+		Vereador emmanuel = new Vereador("Emmanuel Santos", 5, 4, novo);
+		Vereador gilson = new Vereador("Gilson de Souza", 0, 0, patriota);
+		Vereador giselle = new Vereador("Giselle Chirolli", 7, 1, podemos);
+		Vereador jovino = new Vereador("Jovino Cardoso Neto", 321, 0, solidariedade);
+		Vereador marcos = new Vereador("Marcos da Rosa", 0, 0, uniao);
+		Vereador mauricio = new Vereador("Maurício Goll", 0, 0, psdb);
+		Vereador sylvio = new Vereador("Sylvio Zimmermann", 2, 1, psdb);
+		
+		camara.addPartido(independentes);
+		camara.addPartido(republicanos);
+		camara.addPartido(psd);
+		camara.addPartido(pl);
+		camara.addPartido(cidadania);
+		camara.addPartido(uniao);
+		camara.addPartido(podemos);
+		camara.addPartido(novo);
+		camara.addPartido(patriota);
+		camara.addPartido(solidariedade);
+		camara.addPartido(psdb);
+		
+	}
+
+}

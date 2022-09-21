@@ -1,0 +1,16 @@
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		Camara camara = new Camara();
+		
+		Partido republicanos = new Partido("Republicanos", 10);
+		Partido psd = new Partido("Partido Social Democrático", 55);
+		
+		Vereador egidio = new Vereador("Egídio da Rosa Beckhauser", 10, 3, republicanos);
+		Vereador silmara = new Vereador("Silmara Miguel", 2, 1, psd);
+		
+	}
+
+}
