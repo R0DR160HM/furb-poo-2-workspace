@@ -72,9 +72,6 @@ public class Partido {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}	
 	
@@ -84,9 +81,6 @@ public class Partido {
 			if (v.getQtdProjApresentados() > vereador.getQtdProjApresentados()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}
@@ -98,9 +92,6 @@ public class Partido {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}
 	
@@ -110,9 +101,6 @@ public class Partido {
 			if (v.getDesempenho() < vereador.getDesempenho()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}

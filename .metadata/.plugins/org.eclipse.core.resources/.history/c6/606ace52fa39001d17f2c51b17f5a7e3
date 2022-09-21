@@ -41,9 +41,6 @@ public class Camara {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}
 	
@@ -54,9 +51,6 @@ public class Camara {
 			if (v.getQtdProjApresentados() > vereador.getQtdProjApresentados()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}
@@ -69,9 +63,6 @@ public class Camara {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}
 	
@@ -82,9 +73,6 @@ public class Camara {
 			if (v.getDesempenho() < vereador.getDesempenho()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}

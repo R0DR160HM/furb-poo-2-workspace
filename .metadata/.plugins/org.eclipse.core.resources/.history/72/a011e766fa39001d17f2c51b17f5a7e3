@@ -34,15 +34,12 @@ public class Camara {
 	}
 	
 	public Vereador getVereadorMaisProjAprovados() {
-		Vereador vereador = new Vereador();
+		Vereador vereador = this.partidos.get(0).getVereadorMaisProjAprovados();
 		for (Partido p : this.partidos) {
 			Vereador v = p.getVereadorMaisProjAprovados();
 			if (v.getQtdProjAprovados() > vereador.getQtdProjAprovados()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}
@@ -55,9 +52,6 @@ public class Camara {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}
 	
@@ -69,9 +63,6 @@ public class Camara {
 				vereador = v;
 			}
 		}
-		if (vereador.getNome().equals("")) {
-			return null;
-		}
 		return vereador;
 	}
 	
@@ -82,9 +73,6 @@ public class Camara {
 			if (v.getDesempenho() < vereador.getDesempenho()) {
 				vereador = v;
 			}
-		}
-		if (vereador.getNome().equals("")) {
-			return null;
 		}
 		return vereador;
 	}
